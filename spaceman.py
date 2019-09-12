@@ -152,7 +152,6 @@ def spaceman(secret_word):
     letters_guessed = []
     tries = 7
 
-
     print(secret_word)
     
 
@@ -165,6 +164,8 @@ def spaceman(secret_word):
         print (f'You have {tries} tries to guess the word correctly')
         print(" ** Correct guesses don't lose tries ** ")
         #print (' _ ' * len(secret_word))
+        print("guesses: "+str(letters_guessed))
+    
         new_get_guessed_word(secret_word, letters_guessed)
     
 
