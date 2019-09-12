@@ -152,7 +152,7 @@ def spaceman(secret_word):
     letters_guessed = []
     tries = 7
 
-    print(secret_word)
+    #print(secret_word)
     
 
     while (is_word_guessed(secret_word, letters_guessed) == False and tries>0):
@@ -200,7 +200,8 @@ def spaceman(secret_word):
         
 
     if (tries < 1):
-        return print('you lose.')
+        print('you lose.')
+        return print(f'the word was {secret_word}')
     else:
         return print('WOOOHOOOO!!!!!!!')
 
