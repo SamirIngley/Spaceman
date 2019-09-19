@@ -55,6 +55,9 @@ def is_word_guessed(secret_word, letters_guessed):
     else: 
         return False
 
+def test_is_word_guessed():
+     assert is_word_guessed ('yoma', 'yomad') == True
+
 
 
 
@@ -103,7 +106,8 @@ def new_get_guessed_word (secret_word, letters_guessed):
     return print(display)
 
 
-
+def test_get_guessed_word():
+     assert new_get_guessed_word ('yoma', 'yomad') == True
 
 
 
@@ -132,6 +136,9 @@ def is_guess_in_word(guess, secret_word):
 
     #pass
 
+
+def test_is_guess_in_word():
+    assert is_guess_in_word('m', 'modelicious') == True 
 
 
 
@@ -223,6 +230,6 @@ def spaceman(secret_word):
 #print(secret_word)
 #new_get_guessed_word(secret_word, letters_guessed)
 
-secret_word = load_word()
-spaceman(secret_word)
+# secret_word = load_word()
+# spaceman(secret_word)
 
